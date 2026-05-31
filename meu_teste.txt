@@ -1,0 +1,6 @@
+MODE classic
+R2 100
+F4 3.0
+MEM 132 5.0
+L.D F6, 32(R2)
+ADD.D F0, F6, F4
