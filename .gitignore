@@ -1,0 +1,4 @@
+tomasulo
+*.o
+trace_*.txt
+rob_trace.txt

@@ -1,0 +1,23 @@
+# Exemplo do algoritmo de Tomasulo (slides Hennessy & Patterson)
+MODE classic
+
+# Registradores inteiros (endereco base)
+R2 100
+R3 200
+
+# Registrador FP inicial
+F4 3.0
+
+# Memoria: endereco efetivo = offset + Reg[R]
+# L.D F6, 32(R2)  -> 32 + 100 = 132
+# L.D F2, 44(R3)  -> 44 + 200 = 244
+MEM 132 5.0
+MEM 244 2.0
+
+# Sequencia de instrucoes dos slides
+L.D F6, 32(R2)
+L.D F2, 44(R3)
+MUL.D F0, F2, F4
+SUB.D F8, F2, F6
+DIV.D F10, F0, F6
+ADD.D F6, F8, F2

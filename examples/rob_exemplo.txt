@@ -1,0 +1,16 @@
+# Exemplo do algoritmo de Tomasulo com ROB (slides Hennessy & Patterson)
+MODE rob
+
+R2 100
+R3 200
+F4 3.0
+
+MEM 132 5.0
+MEM 244 2.0
+
+L.D F6, 32(R2)
+L.D F2, 44(R3)
+MUL.D F0, F2, F4
+SUB.D F8, F2, F6
+DIV.D F10, F0, F6
+ADD.D F6, F8, F2
