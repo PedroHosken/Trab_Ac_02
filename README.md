@@ -2,6 +2,8 @@
 
 Simulador educacional em C++ do algoritmo de Tomasulo para ponto flutuante MIPS, baseado em *Arquitetura de Computadores: Uma Abordagem Quantitativa* (Hennessy & Patterson).
 
+> **Documentação detalhada:** consulte [DOCUMENTACAO.md](DOCUMENTACAO.md) para explicação completa do funcionamento do algoritmo, estruturas de dados e código fonte.
+
 O simulador suporta dois modos:
 - **Clássico** — estações de reserva com renomeação via `Qi` (slides 104–108)
 - **Com ROB** — Reorder Buffer para execução especulativa com commit in-order (slides 110+)
